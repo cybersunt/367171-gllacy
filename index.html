@@ -14,7 +14,7 @@
           <li class="nav-item nav-item-current">
             <a href="catalog.html">Каталог</a>
             <ul class="submenu-nav hidden">
-              <li class="submenu-item"><a href="#"><b>Новинка</b></a></li>
+              <li class="submenu-item submenu-item-new-goods">Новинки</li>
               <li class="submenu-item"><a href="#">Сливочное</a></li>
               <li class="submenu-item submenu-item-current"><a href="#">Щербеты</a></li>
               <li class="submenu-item"><a href="#">Фруктовый лед</a></li>
@@ -47,18 +47,14 @@
               <label for="search">Электронная почта</label>
             </p>
             <p>
-              <input class="feedback-input feedback-input-pswd" type="password" name="password" id="password" placeholder="Электронная почта">
+              <input class="feedback-input feedback-input-pswd" type="password" name="password" id="password" placeholder="Пароль">
               <label for="search">Пароль</label>
             </p>
             <button type="submit" class="btn feedback-btn">Войти</button>
-            <ul class="user-help">
-              <li class="user-help-item">
-                <a class="user-help-link" href="#">Забыли пароль?</a>
-              </li>
-              <li class="user-help-item">
-                <a class="user-help-link" href="#">Новая регистрация</a>
-              </li>
-            </ul>
+            <div class="user-help">
+              <p><a class="user-help-link" href="#">Забыли пароль?</a></p>
+              <p><a class="user-help-link" href="#">Новая регистрация</a></p>
+            </div>
           </form>
         </li>
         <li class="user-link">
@@ -69,7 +65,11 @@
               <td><span class="cart-del">x</span></td>
               <td>
                 <a href="catalog-item.html">
-                  <img class="cart-product-img" src="img/product-preview-1.png" alt="Пломбир с апельсиновым джемом">
+                  <img class="cart-product-img" src="img/product-preview-1.png" alt="Пломбир с апельсиновым джемом">                  
+                </a>
+              </td>
+              <td>
+                <a href="catalog-item.html">
                   <p class="cart-product-title">Пломбир с апельсиновым джемом</p>
                 </a>
               </td>
@@ -84,7 +84,11 @@
               <td><span class="cart-del">x</span></td>
               <td>
                 <a href="catalog-item.html">
-                  <img class="cart-product-img" src="img/product-preview-2.png" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                  <img class="cart-product-img" src="img/product-preview-2.png" alt="Клубничный пломбир с присыпкой из белого шоколада">                  
+                </a>
+              </td>
+              <td>
+                <a href="catalog-item.html">                  
                   <p class="cart-product-title">Клубничный пломбир с присыпкой из белого шоколада</p>
                 </a>
               </td>
@@ -96,63 +100,50 @@
               <td class="cart-product-order-price">300 руб</td>
             </tr>
              <tr class="cart-total">
-               <td colspan="4">
+               <td colspan="5">
                  <p><b>Итого: 750 руб</b></p>
                  <p><a class="btn btn-order" href="#">Оформить заказ</a></p>
                </td>
              </tr>
           </table>
-
         </li>
-      </ul>
-
-      <ul class="shop-info">
-        <li class="work-time">С 10 до 20, ежедневно</li>
-        <li class="work-phone"><a href="tel:88124502525">8 812 450-25-25</a></li>
       </ul>
     </header>
 
     <main class="wrap">
+    <h1 class="hidden">Интернет-магазин мороженого Глейси</h1>
+      <div class="shop-info">
+        <p class="work-time">С 10 до 20, ежедневно</p>
+        <p class="work-phone"><a href="tel:88124502525">8 812 450-25-25</a></p>
+      </div>
       <section class="slider">
+        <h2 class="hidden">Слайдер</h2>
         <ul class="slides">
-          <li class="slide-item">
-            <a href="catalog-item.html" class="slide-link">
-                <img src="img/slide1.png" alt="Крем-брюле и пломбир с малиновым джемом" class="slide-img">
-                <h2 class="slide-caption">Крем-брюле и пломбир с малиновым джемом</h2>
-             </a>
+          <li class="slide-item slide-first">
+            <p class="slide-caption">Крем-брюле и пломбир с малиновым джемом</p>
           </li>
-          <li class="slide-item">
-            <a href="catalog-item.html" class="slide-link">
-                <img src="img/slide2.png" alt="Шоколадный пломбир и лимонный сорбет " class="slide-img">
-                <h2 class="slide-caption">Шоколадный пломбир и лимонный сорбет </h2>
-             </a>
+          <li class="slide-item slide-second">
+            <p class="slide-caption">Шоколадный пломбир и лимонный сорбет</p>
           </li>
-          <li class="slide-item">
-            <a href="catalog-item.html" class="slide-link">
-                <img src="img/slide3.png" alt="Пломбир с помадкой и клубничный щербет" class="slide-img">
-                <h2 class="slide-caption">Пломбир с помадкой и клубничный щербет</h2>
-             </a>
+          <li class="slide-item slide-third">       
+            <p class="slide-caption">Пломбир с помадкой и клубничный щербет</p>
           </li>
         </ul>
-        <form class="slider-switches" action="https://echo.htmlacademy.ru" method="get">
+        <a class="btn btn-slider" href="catalog.html">Давайте оба!</a>
           <ul class="slides-switches">
-            <li class="slide-input">
-              <input type="radio" name="slide-radio" class="slide-radio" checked>
-              <label class="hidden">Первая картинка слайда</label>
+            <li class="slide-radio">
+              <span class="slide-btn-1"></span>
             </li>
-            <li class="slide-input">
-              <input type="radio" name="slide-radio" class="slide-radio">
-              <label class="hidden">Вторая картинка слайда</label>
+            <li class="slide-radio">              
+              <span class="slide-btn-2"></span>
             </li>
-            <li class="slide-input">
-              <input type="radio" name="slide-radio" class="slide-radio">
-              <label class="hidden">Третья картинка слайда</label>
+            <li class="slide-radio">              
+              <span class="slide-btn-3"></span>
             </li>
-          </ul>
-        </form>
-        <a class="btn btn-slider" href="catalog.html">Давайте оба</a>
+          </ul>        
       </section>
       <section class="promo">
+        <h2 class="hidden">Акции</h2>
         <div class="promo-raspberries column ">
           <p class="promo-title">Малинка даром!</p>
           <p class="promo-desc">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -165,7 +156,7 @@
         </div>
       </section>
       <section class="goods">
-      <h3 class="hidden">Каталог товаров</h3>
+      <h2 class="hidden">Каталог товаров</h2>
         <ul class="goods-list">
           <li class="goods-item goods-best">
             <a class="goods-item-link" href="catalog-item.html">
@@ -202,7 +193,8 @@
         </ul>
       </section>
       <section class="features">
-      <h3>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
+      <h2 class="hidden">Наши преимущества</h2>
+      <p>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
       <ul class="column features-list">
         <li class="feature feature-production">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
         <li class="feature feature-natural-prod">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
@@ -211,20 +203,22 @@
       </ul>
       </section>
       <section class="more-info">
-        <div class="more-info-blog column">
-          <p class="more-info-blog-new">Новое в нашем блоге</p>
-          <p class="more-info-blog-title">
-            <a class="more-info-blog-link" href="blog-item.html">10 способов сервировки фруктовых щербетов к столу</a>
-          </p>
-        </div>
-        <form class="more-info-subscribe column" action="https://echo.htmlacademy.ru" method="post">
+        <h2 class="hidden">Полезная информв</h2>
+        <article class="more-info-blog column">
+          <p class="more-info-blog-new">Новое в нашем блоге</p>          
+          <a class="more-info-blog-link" href="blog-item.html">10 способов сервировки фруктовых щербетов к столу</a>
+        </article>
+        <div class="column">
           <p class="more-info-subscribe-txt">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-          <input type="email" id="subscribe-mail" name="subscribe-mail" class="more-info-subscribe-mail" placeholder="Электронная почта">
-          <label for="subscribe-mail" class="more-info-subscribe-label hidden">Электронная почта</label>
-          <button type="submit" class="btn btn-subscribe">Отправить</button>
-        </form>
+          <form class="more-info-subscribe" action="https://echo.htmlacademy.ru" method="post">          
+            <input type="email" id="subscribe-mail" name="subscribe-mail" class="more-info-subscribe-mail" placeholder="Электронная почта">
+            <label for="subscribe-mail" class="more-info-subscribe-label hidden">Электронная почта</label>
+            <button type="submit" class="btn btn-subscribe">Отправить</button>
+          </form>
+      </div>
       </section>
       <section class="map">
+        <h2 class="hidden">Наши контакты</h2>
         <div class="map-ymaps"><!--Интерактивная карта вставляется скриптом--></div>
         <div class="map-contacts column">
           <p class="map-contacts-desc">Адрес главного офиса и офлайн магазина:</p>
