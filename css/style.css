@@ -1,0 +1,17 @@
+body {
+	background: #849d8f;
+	color: #fff;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 100;
+	font-family: 'Roboto Regular', Arial, sans-serif;
+}
+
+.category-title {
+	font-size: 35px;
+	font-family: 'Roboto Bold', Arial, sans-serif;
+}
+
+.more-info-blog-new {
+	font-family: 'Roboto Medium', Arial, sans-serif;
+}
