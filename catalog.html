@@ -15,7 +15,7 @@
         <ul class="nav">
           <li class="nav-item nav-item-current">
             <a href="catalog.html">Каталог</a>
-            <ul class="submenu-nav hidden">
+            <ul class="submenu-nav visually-hidden">
               <li class="submenu-item submenu-item-new-goods">Новинки</li>
               <li class="submenu-item"><a href="#">Сливочное</a></li>
               <li class="submenu-item submenu-item-current"><a href="#">Щербеты</a></li>
@@ -37,22 +37,22 @@
           <a class="user-link search-link" href="#">
           Поиск
           </a>
-          <form class="search-form hidden" action="https://echo.htmlacademy.ru" method="post">
+          <form class="search-form visually-hidden" action="https://echo.htmlacademy.ru" method="post">
             <input class="search-input" type="text" name="search" id="search" placeholder="Что ищем?">
             <label for="search">Что ищем?</label>
-            <button type="submit" class="btn search-btn hidden">Найти</button>
+            <button type="submit" class="btn search-btn visually-hidden">Найти</button>
           </form>
         </li>
         <li class="user-link">
-          <a class="user-link feedback-link" href="#">Вход</a>
-          <form class="feedback-form hidden" action="https://echo.htmlacademy.ru" method="post">
+          <button type="button" class="user-link feedback-link">Вход</button>
+          <form class="feedback-form visually-hidden" action="https://echo.htmlacademy.ru" method="post">
             <p>
               <input class="feedback-input feedback-input-mail" type="email" name="email" id="email" placeholder="Электронная почта">
-              <label for="search">Электронная почта</label>
+              <label for="email">Электронная почта</label>
             </p>
             <p>
               <input class="feedback-input feedback-input-pswd" type="password" name="password" id="password" placeholder="Пароль">
-              <label for="search">Пароль</label>
+              <label for="password">Пароль</label>
             </p>
             <button type="submit" class="btn feedback-btn">Войти</button>
             <div class="user-help">
@@ -62,11 +62,11 @@
           </form>
         </li>
         <li class="user-link">
-          <a class="user-link cart-full-link" href="#">2 товара</a>
+          <button type="button" class="user-link cart-full-link">2 товара</button>
 
-          <table class="cart hidden">
+          <table class="cart visually-hidden">
             <tr class="cart-product-item">
-              <td><span class="cart-del">x</span></td>
+              <td><button class="cart-del visually-hidden">Удалить из корзины</button></td>
               <td>
                 <a href="catalog-item.html">
                   <img class="cart-product-img" src="img/product-preview-1.jpg" alt="Пломбир с апельсиновым джемом">
@@ -85,7 +85,7 @@
               <td class="cart-product-order-price">300 руб</td>
             </tr>
             <tr class="cart-product-item">
-              <td><span class="cart-del">x</span></td>
+              <td><button class="cart-del visually-hidden">Удалить из корзины</button></td>
               <td>
                 <a href="catalog-item.html">
                   <img class="cart-product-img" src="img/product-preview-2.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада">
@@ -126,10 +126,10 @@
         <p class="work-phone"><a href="tel:88124502525">8 812 450-25-25</a></p>
       </div>
       <section class="filters">
-        <h2 class="hidden">Фильтр товаров</h2>
+        <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
-          <legend class="hidden">Сортировка</legend>
+          <legend class="visually-hidden">Сортировка</legend>
           <label class="filter-title" for="assortment">Сортировка:</label>
           <select class="filter-assort" name="assortment" id="assortment">
             <option class="filter-assort-item" value="по популярности">по популярности</option>
@@ -139,7 +139,7 @@
           </select>
         </fieldset>
         <fieldset>
-          <legend class="hidden">Цена</legend>
+          <legend class="visually-hidden">Цена</legend>
           <label class="filter-title" for="price">Цена: 100 руб. – 500 руб.</label>
           <input type="range" id="price" name="price" min="100" max="500" step="50">
         </fieldset>
@@ -155,7 +155,7 @@
           <label class="filter-value" for="above-thirty">выше 30%</label>
         </fieldset>
         <fieldset>
-          <legend class="hidden">Наполнители:</legend>
+          <legend class="visually-hidden">Наполнители:</legend>
           <input type="checkbox" name="chocolate" id="chocolate" class="filter-checkbox" checked>
           <label class="filter-assort-item" for="chocolate">шоколадные</label>
           <input type="checkbox" name="sugar-powders" id="sugar-powders" class="filter-checkbox" checked>
@@ -171,7 +171,7 @@
         </form>
       </section>
       <section class="goods">
-      <h2 class="hidden">Каталог товаров</h2>
+      <h2 class="visually-hidden">Каталог товаров</h2>
         <ul class="goods-list">
           <li class="goods-item">
             <p class="goods-item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
