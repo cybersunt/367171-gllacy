@@ -2,7 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
+    <title>HTML Academy: Глейси</title>    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -12,20 +14,20 @@
         <img src="img/logo.svg" alt="Логотиип Глейси" class="main-logo" width="170" height="70">
         <ul class="nav">
           <li class="nav-item">
-            <a href="catalog.html">Каталог</a>
+            <a href="catalog.html" class="nav-item-link"><span>Каталог</span></a>
             <ul class="submenu-nav visually-hidden">
               <li class="submenu-item submenu-item-new-goods">Новинки</li>
-              <li class="submenu-item"><a href="#">Сливочное</a></li>
-              <li class="submenu-item submenu-item-current"><a href="#">Щербеты</a></li>
-              <li class="submenu-item"><a href="#">Фруктовый лед</a></li>
-              <li class="submenu-item"><a href="#">Мелориг</a></li>
+              <li class="submenu-item"><a href="#" class="submenu-item-link">Сливочное</a></li>
+              <li class="submenu-item submenu-item-current"><a href="#" class="submenu-item-link">Щербеты</a></li>
+              <li class="submenu-item"><a href="#"  class="submenu-item-link">Фруктовый лед</a></li>
+              <li class="submenu-item"><a href="#"  class="submenu-item-link">Мелориг</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a href="payment.html">Доставка и оплата</a>
+            <a href="payment.html" class="nav-item-link"><span>Доставка и оплата</span></a>
           </li>
           <li class="nav-item">
-            <a href="aboot.html">О Компании</a>
+            <a href="aboot.html" class="nav-item-link"><span>О Компании</span></a>
           </li>
         </ul>
       </nav>
@@ -39,7 +41,7 @@
             <button type="submit" class="btn search-btn visually-hidden">Найти</button>
           </form>
         </li>
-        <li class="user-link">
+        <li class="user-links">
           <a class="user-link feedback-link" href="login.html">Вход</a>
           <form class="feedback-form visually-hidden" action="https://echo.htmlacademy.ru" method="post">
             <p>
@@ -57,7 +59,7 @@
             </div>
           </form>
         </li>
-        <li class="user-link">
+        <li class="user-links">
           <a class="user-link cart-link" href="basket.html">Пусто</a>
 
           <table class="cart visually-hidden">

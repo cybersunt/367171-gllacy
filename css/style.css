@@ -4,7 +4,216 @@ body {
 	font-size: 16px;
 	line-height: 20px;
 	font-weight: 100;
+	font-family: 'Robotф/*  Базовая стилизация*/
+body {
+	margin: 0;
+  padding: 0;
+
+	background: #849d8f;
+	color: #fff;
+	font-size: 16px;
+	line-height: 20px;
+	font-family: 'Roboto Medium', Arial, sans-serif;
+}
+
+/*нормализация*/
+ul {
+margin: 20px 0;
+padding: 0;
+list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+input::placeholder {
+	font-size: 14px;
+	color: 999999;
 	font-family: 'Roboto Regular', Arial, sans-serif;
+
+}
+	
+/* Т И П О Г Р А Ф И К А */
+
+/*Заголовки*/
+.category-title {
+	font-size: 35px;
+	font-family: 'Roboto Bold', Arial, sans-serif;
+}
+
+.more-info-blog-new {
+	font-family: 'Roboto Medium', Arial, sans-serif;
+}
+
+/*Главное меню*/
+.nav {
+	color: #fff;
+}
+.nav-item {
+	
+}
+.nav-item-link {
+	color: #fff;
+}
+.nav-item-link:hover,
+.nav-item-link:focus {
+	color: #000;
+	background-color: #fff;
+}
+.nav-item-link span {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-item-link:hover span,
+.nav-item-link:focus span {
+	border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+.nav-item-current {
+	background-color: #d07058;
+}
+.nav-item-current span {
+	border-bottom: 1px solid rgba(208, 112, 88, 1);
+}
+
+/*Выпадающее меню*/
+.submenu-nav {
+	background-color: #fff;
+	color: #000;
+	font-size: 14px;
+	font-family: 'Roboto Regular', Arial, sans-serif;
+}
+
+.submenu-item:hover, 
+.submenu-item:focus {
+	background-color: #fbded7;
+}
+
+.submenu-item:active {
+	background-color: #f6b5a5;
+}
+.submenu-item-current {
+	background-color: #d07058;
+}
+
+.submenu-item-link,
+.submenu-item-link:hover,
+.submenu-item-link:focus,
+.submenu-item-link:active,
+.submenu-item-link:visited {
+	color: #000;
+}
+
+.submenu-item-new-goods {
+	font-family: 'Roboto Bold', Arial, sans-serif;
+	font-weight: 700;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.submenu-item-new-goods:hover,
+.submenu-item-new-goods:focus,
+.submenu-item-new-goods:active,
+.submenu-item-new-goods:visited {
+	background-color: #fff;
+}
+
+/*Уголок пользователя*/ 
+.user-block,
+.user-link {
+	color: #fff;
+	font-size: 14px;
+}
+
+.user-link {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.user-link:hover,
+.user-link:focus {
+  color: #000;
+	background-color: rgba(255, 255, 255, 1);
+}
+
+.search-form,
+.feedback-form {
+  background-color: #f8f7f4;
+}
+
+.cart {
+	background-color: #fff;
+}
+.cart,
+.cart-product-title {
+	font-family: 'Roboto Regular', Arial, sans-serif;
+	font-size: 13px;
+	color: #000;
+}
+
+.cart-full-link {
+	font-family: 'Roboto Bold', Arial, sans-serif;
+}
+
+.cart-product-price {
+	color: #999999;
+}
+
+.breadcrumbs {
+	font-family: 'Roboto Regular', Arial, sans-serif;
+	font-size: 14px;
+}
+
+.shop-info {
+  font-family: 'Roboto Bold', Arial, sans-serif;
+  font-weight: 700;
+}
+.work-time {
+	font-size: 14px;
+}
+.work-phone {
+	font-size: 22px;
+}
+
+/*Основной контент*/
+
+.slide-caption {
+	 font-family: 'Roboto Bold', Arial, sans-serif;
+	 font-weight: 700;
+	 font-size: 60px;
+	 text-align: center;
+}
+
+.promo {
+	font-family: 'Roboto Bold', Arial, sans-serif;
+	font-weight: 700;
+}
+.promo-title {
+	font-size: 35px;
+}
+.promo-desc {
+	font-size: 18px;
+}
+/*Кнопки */
+.btn {
+	color: #fff;
+	font-family: 'Roboto Bold', Arial, sans-serif;
+	font-weight: 700;
+
+	background: linear-gradient(to bottom, #f26843, #e74a35);
+  box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.004);
+}
+.btn:hover,
+.btn:focus {
+   opacity: 0.8;
+}
+.feedback-btn,
+.btn-order,
+.btn-promo,
+.btn-product {
+	font-size: 18px;
+}
+.btn-slider {
+	font-size: 32px;
+}
+o Regular', Arial, sans-serif;
 }
 
 .category-title {
