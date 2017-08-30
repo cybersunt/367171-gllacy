@@ -598,7 +598,8 @@ a {
 }
 .filter-assort,
 .filter-assort-item,
-.filter-value {
+.filter-value,
+.filter-assort-option {
 	line-height: 18px;
 	font-weight: 500;
 	color: #ffffff;
