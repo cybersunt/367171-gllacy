@@ -6,18 +6,19 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/grid.css">
   </head>
   <body>
 
     <header class="main-header wrap">
       <nav class="main-nav">
         <a href="index.html">
-          <img src="img/logo.svg" alt="Логотиип Глейси" class="main-logo" width="170" height="70">
+          <img src="img/logo.svg" alt="Логотиип Глейси" class="main-logo" width="154" height="64">
         </a>
         <ul class="nav">
           <li class="nav-item">
-            <a href="catalog.html" class="nav-item-link nav-item-current"><span>Каталог</span></a>
-            <ul class="submenu-nav visually-hidden">
+            <a href="catalog.html" class="nav-item-link nav-item-current">Каталог</a>
+            <ul class="submenu-nav">
               <li class="submenu-item submenu-item-new-goods">Новинки</li>
               <li class="submenu-item"><a href="#" class="submenu-item-link">Сливочное</a></li>
               <li class="submenu-item submenu-item-current"><a href="#" class="submenu-item-link">Щербеты</a></li>
@@ -26,10 +27,10 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="payment.html" class="nav-item-link"><span>Доставка и оплата</span></a>
+            <a href="payment.html" class="nav-item-link">Доставка и оплата</a>
           </li>
           <li class="nav-item">
-           <a href="aboot.html" class="nav-item-link"><span>О Компании</span></a>
+            <a href="aboot.html" class="nav-item-link">О Компании</a>
           </li>
         </ul>
       </nav>
@@ -47,7 +48,7 @@
         </li>
         <li class="user-links">
           <a class="user-link feedback-link" href="login.html">Вход</a>
-          <form class="feedback-form visually-hidden" action="https://echo.htmlacademy.ru" method="post">
+          <form class="feedback-form hidden" action="https://echo.htmlacademy.ru" method="post">
             <p>
               <input class="feedback-input feedback-input-mail" type="email" name="email" id="email" placeholder="Электронная почта">
               <label for="email">Электронная почта</label>
@@ -58,15 +59,15 @@
             </p>
             <button type="submit" class="btn feedback-btn">Войти</button>
             <div class="user-help">
-              <p><a class="user-help-link" href="#">Забыли пароль?</a></p>
-              <p><a class="user-help-link" href="#">Новая регистрация</a></p>
+              <p class="user-help-paragraph"><a class="user-help-link" href="#">Забыли пароль?</a></p>
+              <p class="user-help-paragraph"><a class="user-help-link" href="#">Новая регистрация</a></p>
             </div>
           </form>
         </li>
         <li class="user-links">
           <a class="user-link cart-full-link" href="basket.html">2 товара</a>
 
-          <table class="cart visually-hidden">
+          <table class="cart hidden">
             <tr class="cart-product-item">
               <td><button class="cart-del visually-hidden">Удалить из корзины</button></td>
               <td>
@@ -87,7 +88,7 @@
               <td class="cart-product-order-price">300 руб</td>
             </tr>
             <tr class="cart-product-item">
-              <td><button class="cart-del visually-hidden">Удалить из корзины</button></td>
+              <td><button class="cart-del">Удалить из корзины</button></td>
               <td>
                 <a href="catalog-item.html">
                   <img class="cart-product-img" src="img/product-preview-2.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада">
@@ -121,11 +122,11 @@
         <li class="breadcrumbs-item"><a class="breadcrumbs-item-link" href="index.html">Главная</a></li>
         <li class="breadcrumbs-item"><a class="breadcrumbs-item-link" href="catalog.html">Каталог</a></li>
         <li class="breadcrumbs-item breadcrumbs-current">Сливочное</li>
-      </ul> 
-      <h1 class="category-title">Сливочное мороженое</h1>   
+      </ul>  
+      <h1 class="category-title">Сливочное мороженое</h1>  
       <div class="shop-info">
         <p class="work-time">С 10 до 20, ежедневно</p>
-        <p class="work-phone"><a href="tel:88124502525">8 812 450-25-25</a></p>
+        <p class="work-phone"><a href="tel:88124502525" class="work-phone-link">8 812 450-25-25</a></p>
       </div>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
@@ -220,7 +221,7 @@
           </li>
           <li class="goods-item">
             <p class="goods-item-title"><span>Сливочное с шоколадной стружкой</span></p>
-            <img src="img/product08.c" alt="Сливочное с шоколадной стружкой" class="goods-item-img">
+            <img src="img/product08.jpg" alt="Сливочное с шоколадной стружкой" class="goods-item-img">
             <p class="goods-item-price">320 &#8381;<span>/кг</span></p>
             <a class="btn btn-product" href="catalog-item.html">Быстрый просмотр</a>
           </li>
@@ -251,23 +252,23 @@
           </li>
         </ul>
         <ul class="pagination">
-          <li class="pagination-item pagination-item-back">Назад</li>
+          <li class="pagination-item pagination-item-back"><span class="visually-hidden">Назад</span></li>
           <li class="pagination-item"><a href="#" class="pagination-item-link pagination-item-current">1</a></li>
           <li class="pagination-item"><a class="pagination-item-link" href="#">2</a></li>
           <li class="pagination-item"><a class="pagination-item-link" class="pagination-item-linkhref="#">3</a></li>
           <li class="pagination-item"><a class="pagination-item-link" href="#">4</a></li>
           <li class="pagination-item"><a class="pagination-item-link" href="#">5</a></li>
-          <li class="pagination-item pagination-item-fwd"><a class="pagination-item-link" href="#">Вперед</a></li>
+          <li class="pagination-item pagination-item-fwd"><a class="pagination-item-link" href="#"><span class="visually-hidden">Вперед</span></a></li>
         </ul>
       </section>
     </main>
     <footer class="main-footer wrap">
       <div class="row">
       <ul class="social">
-        <li class="social-item social-twit"><a class="social-link" href="http://twitter.com">Twitter</a></li>
-        <li class="social-item social-inst"><a class="social-link" href="http://instagram.com">Instagram</a></li>
-        <li class="social-item social-fb"><a class="social-link" href="http://facebook.com">Facebook</a></li>
-        <li class="social-item social-vk"><a class="social-link" href="http://vk.com">Вконтакте</a></li>
+        <li class="social-item social-twit"><a class="social-link" href="http://twitter.com"><span class="visually-hidden">Twitter</span></a></li>
+        <li class="social-item social-inst"><a class="social-link" href="http://instagram.com"><span class="visually-hidden">Instagram</span></a></li>
+        <li class="social-item social-fb"><a class="social-link" href="http://facebook.com"><span class="visually-hidden">Facebook</span></a></li>
+        <li class="social-item social-vk"><a class="social-link" href="http://vk.com"><span class="visually-hidden">Вконтакте</span></a></li>
       </ul>
       <ul class="footer-menu column">
         <li class="footer-menu-item footer-menu-item-current"><a href="#" class="footer-menu-link">Для поставщиков</a></li>

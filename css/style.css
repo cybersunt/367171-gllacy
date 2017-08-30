@@ -1,7 +1,3 @@
-/*.visually-hidden {
-	display: none;
-}
-*/
 /*  Базовая стилизация*/
 body {
 	margin: 0;
@@ -18,7 +14,23 @@ body {
 a {
 	text-decoration: none;
 }
-	
+
+/*общие классы*/
+.hidden {
+	display: none;
+}
+
+.visually-hidden {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+}
+
 /* Т И П О Г Р А Ф И К А */
 
 /*Заголовки*/
@@ -40,16 +52,24 @@ a {
 	color: #ffffff;
 	vertical-align: middle;
 }
+
 .nav-item {
 	font-size: 16px;
 	line-height: 18px;
-	height: 18px;
+}
+
+.nav-item > .submenu-nav {
+	display: none;
+}
+
+.nav-item:hover > .submenu-nav,
+.nav-item:focus > .submenu-nav {
+	display: block;
 }
 
 .nav-item-link {
 	color: #ffffff;
 	font-weight: 700;
-	line-height: 18px;
 }
 
 .nav-item-link:hover,
@@ -57,13 +77,14 @@ a {
 	color: #000;
 	background-color: #ffffff;
 }
+
 .nav-item-link span {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .nav-item-link:hover span,
 .nav-item-link:focus span {
-	border-bottom: 1px solid rgba(255, 255, 255, 1);
+	border: none;
 }
 
 .nav-item-current {
@@ -71,7 +92,7 @@ a {
 }
 
 .nav-item-current span {
-	border-bottom: 1px solid rgba(208, 112, 88, 1);
+	border: none;
 }
 
 /*Выпадающее меню*/
@@ -81,9 +102,8 @@ a {
   list-style: none;
 
 	background-color: #ffffff;
-	color: #000000;
+	color: #323232;
 	font-size: 14px;
-	font-family: 'Roboto Regular', Arial, sans-serif;
 }
 
 .submenu-item:hover, 
@@ -94,6 +114,7 @@ a {
 .submenu-item:active {
 	background-color: #f6b5a5;
 }
+
 .submenu-item-current {
 	background-color: #d07058;
 }
@@ -103,11 +124,10 @@ a {
 .submenu-item-link:focus,
 .submenu-item-link:active,
 .submenu-item-link:visited {
-	color: #000000;
+	color: #323232;
 }
 
 .submenu-item-new-goods {
-	font-family: 'Roboto Bold', Arial, sans-serif;
 	font-weight: 700;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -140,7 +160,7 @@ a {
 
 .user-link:hover,
 .user-link:focus {
-  color: #000000;
+  color: #323232;
 	background-color: rgba(255, 255, 255, 1);
 }
 
@@ -156,6 +176,7 @@ a {
 	line-height: 24px;
 	border-bottom: 1px solid rgba(50, 50, 50, 0.2);
 }
+
 .user-help-link:hover,
 .user-help-link:focus,
 .user-help-link:active {
@@ -163,27 +184,36 @@ a {
 	border-bottom: 1px solid rgba(255, 188, 158, 0.2);
 }
 
-.search-form,
-.feedback-form {
-  background-color: #f8f7f4;
-}
-
 .cart {
 	background-color: #ffffff;
 }
 
-.cart,
 .cart-product-title {
+	font-size: 14px;
+	line-height: 16px;
+	color: #323232;
+}
+
+.cart-product-counts,
+.cart-product-order-price {
 	font-size: 13px;
-	color: #000000;
+	line-height: 16px;
+	color: #323232;
 }
 
 .cart-full-link {
-  
+  color: #323232;
+  background-color: #ffffff;
 }
 
 .cart-product-price {
 	color: #999999;
+}
+
+.cart-total {
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 18px;
 }
 
 .breadcrumbs {
@@ -249,11 +279,12 @@ a {
 }
 
 .slide-caption {
-	 font-weight: 700;
-	 font-size: 60px;
-	 text-align: center;
-	 margin-top: 0;
-	 margin-bottom: 0;
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 60px;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .promo {
@@ -268,6 +299,20 @@ a {
 .promo-desc {
 	font-size: 18px;
 	line-height: 22px;
+}
+
+.promo-raspberries {
+	background-color: #762646;
+	background-image: url('../img/bg-raspberries.jpg');
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+.promo-chocolate {
+	background-color: #744834;
+	background-image: url('../img/bg-chocolate.jpg');
+	background-repeat: no-repeat;
+	background-position: top center;
 }
 
 /*Каталог*/
@@ -294,8 +339,37 @@ a {
 	font-size: 30px;
 }
 
+.goods-item > .btn-product {
+	display: none;
+}
+
+.goods-item:hover > .btn-product,
+.goods-item:focus > .btn-product {
+	display: block;
+}
+
+.goods-item:hover,
+.goods-item:focus {
+	border-radius: 5px;
+  background-color: rgba(248, 247, 244, 0.2);
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.goods-item-img {
+	width: 267px;
+	height: 267px;
+	margin-bottom: 12px;
+	border-radius: 50%;
+}
+
 .features {
-	color: #323232;
+  color: #323232;
+	border-radius: 15px;
+	background-color: #ece0c6;
+	background-image: url('../img/bg-wafer.jpg');
+	background-repeat: repeat;
+	background-position: top center;
 }
 
 .features-list {
@@ -313,6 +387,22 @@ a {
 
 .more-info {	
   color: #323232;
+}
+
+.more-info-blog {
+  border-radius: 15px;
+  background-color: #ffffff;
+  background-image: url('../img/blog.jpg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.more-info-subscribe {
+  border-radius: 15px;
+  background-color: #f8f7f4;
+  background-image: url('../img/bg-post.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .more-info-blog-new {
@@ -345,6 +435,8 @@ a {
 }
 .map-contacts {
 	color: #323232;
+	background-color: #ffffff;
+  border-radius: 15px;
 }
 
 .map-contacts-desc, 
@@ -376,8 +468,8 @@ a {
 }
 
 .pagination-item {
- line-height: 18px;
- font-weight: 500;
+  line-height: 18px;
+  font-weight: 500;
 }
 
 .pagination-item-link,
@@ -387,7 +479,7 @@ a {
 
 .pagination-item-link:hover,
 .pagination-item-link:focus {
- background-color: #9db1a5;
+  background-color: #9db1a5;
 }
 
 .pagination-item-link:active,
@@ -452,6 +544,11 @@ a {
 	border-bottom: 1px solid rgba(255, 188, 158, 0.2);
 }
 /*Формы*/
+.modal,
+.search-form,
+.feedback-form {
+	background-color: #f8f7f4;
+}
 
 .search-input,
 .feedback-input,
@@ -478,6 +575,12 @@ a {
 	color: #323232;
 }
 
+.modal-label {
+	font-size: 11px;
+	line-height: 13px;
+	color: #5b9ddf;
+}
+
 .filter-fieldset {
 	border: 0;
 }
@@ -490,7 +593,6 @@ a {
 .filter-assort,
 .filter-assort-option {
 	background-color: #a9bab0;
-	color: #ffffff;
 }
 .filter-assort,
 .filter-assort-item,
@@ -513,6 +615,7 @@ a {
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 700;
+	text-align: center;
 
 	background: linear-gradient(to bottom, #f26843, #e74a35);
   box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.004);
@@ -525,13 +628,6 @@ a {
 
 .btn:active {
 	background: linear-gradient(to top, #f26843, #e74a35);
-}
-
-.feedback-btn,
-.btn-order,
-.btn-promo,
-.btn-product {
-	font-size: 18px;
 }
 
 .btn-slider {
@@ -551,7 +647,7 @@ a {
 .btn-filter:focus {
   background-color: #ffffff;
   background: #ffffff;
-  color: #000000;
+  color: #323232;
   font-weight: 500;
 }
 
