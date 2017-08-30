@@ -97,7 +97,6 @@ a {
 
 /*Выпадающее меню*/
 .submenu-nav {
-  margin: 20px 0;
   padding: 0;
   list-style: none;
 
@@ -583,6 +582,9 @@ a {
 
 .filter-fieldset {
 	border: 0;
+}
+.filter-background {
+	background-color: #aabcb2;
 }
 
 .filter-title {
