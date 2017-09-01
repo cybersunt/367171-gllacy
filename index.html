@@ -18,7 +18,7 @@
             <ul class="submenu-nav">
               <li class="submenu-item submenu-item-new-goods">Новинки</li>
               <li class="submenu-item"><a href="#" class="submenu-item-link">Сливочное</a></li>
-              <li class="submenu-item submenu-item-current"><a href="#" class="submenu-item-link">Щербеты</a></li>
+              <li class="submenu-item"><a href="#" class="submenu-item-link">Щербеты</a></li>
               <li class="submenu-item"><a href="#"  class="submenu-item-link">Фруктовый лед</a></li>
               <li class="submenu-item"><a href="#"  class="submenu-item-link">Мелориг</a></li>
             </ul>
@@ -34,7 +34,7 @@
 
       <ul class="user-block">
         <li class="user-links">
-          <a class="user-link search-link" href="#">Поиск</a>
+          <a class="user-link search-link visually-hidden" href="#">Поиск</a>
           <form class="search-form hidden" action="https://echo.htmlacademy.ru" method="post">
             <input class="search-input" type="text" name="search" id="search" placeholder="Что ищем?">
             <label for="search">Что ищем?</label>
@@ -67,9 +67,11 @@
 
     <main class="wrap">
     <h1 class="visually-hidden">Интернет-магазин мороженого Глейси</h1>
-      <div class="shop-info">
-        <p class="work-time">С 10 до 20, ежедневно</p>
-        <p class="work-phone"><a href="tel:88124502525" class="work-phone-link">8 812 450-25-25</a></p>
+      <div class="row">
+        <div class="shop-info">
+          <p class="work-time">С 10 до 20, ежедневно</p>
+          <p class="work-phone"><a href="tel:88124502525" class="work-phone-link">8 812 450-25-25</a></p>
+        </div>
       </div>
       <section class="slider">
         <h2 class="visually-hidden">Слайдер</h2>
@@ -87,12 +89,12 @@
             <a class="btn btn-slider" href="catalog-item.html">Давайте оба!</a>
           </li>
         </ul>
-        <div class="slides-switches">
-          <button type="button" class="slide-btn">Первый слайд</button>
-          <button type="button" class="slide-btn">Второй слайд</button>
-          <button type="button" class="slide-btn">Третий слайд</button>
+         <div class="slides-switches">
+          <button type="button" class="slide-btn visually-hidden">Первый слайд</button>
+          <button type="button" class="slide-btn visually-hidden">Второй слайд</button>
+          <button type="button" class="slide-btn visually-hidden">Третий слайд</button>
         </div>        
-      </section>
+      </section>      
       <section class="promo row">
         <h2 class="visually-hidden">Акции</h2>
         <div class="promo-block promo-raspberries">
@@ -187,7 +189,6 @@
       </section>
     </main>
     <footer class="main-footer wrap">
-      <div class="row">
       <ul class="social">
         <li class="social-item social-twit"><a class="social-link" href="http://twitter.com"><span class="visually-hidden">Twitter</span></a></li>
         <li class="social-item social-inst"><a class="social-link" href="http://instagram.com"><span class="visually-hidden">Instagram</span></a></li>
@@ -205,7 +206,6 @@
       <div class="copyright">
         <a href="http://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy" class="copyright-img" width="110" height="40"></a>
         <p class="copyright-txt">Сделано в <a class="copyright-link" href="http://htmlacademy.ru">HTML Academy</a> &#169; 2017</p>
-      </div>
       </div>
     </footer>
 
