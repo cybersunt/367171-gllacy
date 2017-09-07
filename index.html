@@ -6,8 +6,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/decor.css">
   </head>
   <body class="body-index">
 
@@ -115,7 +113,7 @@
           </li>
         </ul>
           <div class="slides-toggles">
-            <button type="button" class="slide-toggle"><span class=" visually-hidden">Первый слайд</span></button>
+            <button type="button" class="slide-toggle slide-toggle-checked"><span class=" visually-hidden">Первый слайд</span></button>
             <button type="button" class="slide-toggle"><span class=" visually-hidden">Второй слайд</span></button>
             <button type="button" class="slide-toggle"><span class=" visually-hidden">Третий слайд</span></button>
           </div>        
@@ -130,7 +128,7 @@
         <div class="promo-block promo-chocolate">
           <p class="promo-title">Шоколадки даром!</p>
           <p class="promo-desc">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <a class="btn btn-promo" href="#">Хочу шоколадки</a>
+          <a class="btn btn-promo" href="#">Хочу шоколадки!</a>
         </div>
       </section>
       <section class="goods">
@@ -139,25 +137,25 @@
           <li class="goods-item goods-best">
             <p class="goods-item-title"><a class="goods-item-link" href="catalog-item.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
             <img src="img/product01.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" class="goods-item-img">
-            <p class="goods-item-price">310 &#8381;<span>/кг</span></p>
+            <p class="goods-item-price">310 <img src="img/ruble.svg" width="31" height="36" alt="Рубль"><span>/кг</span></p>
             <a class="btn btn-product" href="catalog-item.html">Быстрый просмотр</a>
           </li>
           <li class="goods-item goods-best">
             <p class="goods-item-title"><a class="goods-item-link" href="catalog-item.html">Сливочно-кофейное с кусочками шоколада</a></p>
             <img src="img/product02.jpg" alt="Сливочно-кофейное с кусочками шоколада" class="goods-item-img">
-            <p class="goods-item-price">390 &#8381;<span>/кг</span></p>
+            <p class="goods-item-price">380 <img src="img/ruble.svg" width="31" height="36" alt="Рубль"><span>/кг</span></p>
             <a class="btn btn-product" href="catalog-item.html">Быстрый просмотр</a>
           </li>
           <li class="goods-item goods-best">
             <p class="goods-item-title"><a class="goods-item-link" href="catalog-item.html">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
             <img src="img/product03.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" class="goods-item-img">
-            <p class="goods-item-price">355 &#8381;<span>/кг</span></p>
+            <p class="goods-item-price">355 <img src="img/ruble.svg" width="31" height="36" alt="Рубль"><span>/кг</span></p>
             <a class="btn btn-product" href="catalog-item.html">Быстрый просмотр</a>
           </li>
           <li class="goods-item goods-best">
             <p class="goods-item-title"><a class="goods-item-link" href="catalog-item.html">Сливочное крем-брюле с карамельной подливкой</a></p>
             <img src="img/product04.jpg" alt="Сливочное крем-брюле с карамельной подливкой" class="goods-item-img">
-            <p class="goods-item-price">415 &#8381;<span>/кг</span></p>
+            <p class="goods-item-price">415 <img src="img/ruble.svg" width="31" height="36" alt="Рубль"><span>/кг</span></p>
             <a class="btn btn-product" href="catalog-item.html">Быстрый просмотр</a>
           </li>
         </ul>
@@ -199,15 +197,17 @@
           <img src="img/map.jpg" class="map-img" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1200" height="430">
           <p class="map-adress visually-hidden">Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
         </div>
-        <div class="map-contacts column">
+        <div class="map-contacts">
           <div class="map-info">
-          <p class="map-contacts-desc">Адрес главного офиса<br> и офлайн магазина:</p>
-          <p class="map-contacts-data">ул. Большая Конюшенная<br> 19/8, Санкт-Петербург</p>
-          <div class="map-contacts-phone">
-            <p class="map-contacts-desc">Для заказов по телефону:</p>          
-            <p class="map-contacts-data">8 812 450-25-25</p>          
-            <p class="map-contacts-desc">(с 10 до 20 ежедневно)</p>
-          </div>
+            <div class="map-contacts-adress">
+              <p class="map-contacts-desc">Адрес главного офиса<br> и офлайн магазина:</p>
+              <p class="map-contacts-data">ул. Большая Конюшенная<br> 19/8, Санкт-Петербург</p>
+            </div>
+            <div class="map-contacts-phone">
+              <p class="map-contacts-desc desc-text">Для заказов по телефону:</p>          
+              <p class="map-contacts-data desc-phone">8 812 450-25-25</p>          
+              <p class="map-contacts-desc">(с 10 до 20 ежедневно)</p>
+            </div>
           <p class="map-contacts-btn" ><a href="#feedback" class="btn btn-feedback">Форма обратной связи</a></p>
           </div>
         </div>
@@ -275,8 +275,8 @@
         <p class="copyright-txt">Сделано в <a class="copyright-link" href="http://htmlacademy.ru">HTML Academy</a> &#169; 2017</p>
       </div>
     </footer>
-    <div class="overlay-modal"></div>
-    <section class="modal modal-feedback" id="feedback">
+    <div class="overlay-modal hidden"></div>
+    <section class="modal modal-feedback hidden" id="feedback">        
       <h3 class="visually-hidden">Обратная связь</h3>
       <p class="modal-feedback-txt">Мы обязательно вам ответим!</p>
       <form class="feedback-form-modal" action="https://echo.htmlacademy.ru" method="post">
@@ -295,7 +295,7 @@
         <button class="btn btn-send" type="submit">Отправить</button>
       </form>
       <button type="button" class="modal-close">Закрыть</button>
-    </section>
+    </section>    
     <script src="js/main.js"></script>
   </body>
 </html>
