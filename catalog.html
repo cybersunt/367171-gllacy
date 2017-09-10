@@ -4,9 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>    
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/normalizem.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="body-catalog">
 
@@ -46,7 +45,7 @@
           <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
             <input class="search-input" type="text" name="search" id="search" placeholder="Что ищем?">
             <label class="search-label" for="search">Что ищем?</label>
-            <button type="submit" class="btn search-btn visually-hidden">Найти</button>
+            <button type="submit" class="visually-hidden">Найти</button>
           </form>
         </li>
         <li class="user-links">
@@ -193,13 +192,13 @@
           <legend class="filter-title">Жирность:</legend>
           <div class="filter-background filter-fat">
             <input type="radio" name="fat-content" value="zero" id="zero" class="filter-radio">
-            <label class="filter-value" for="zero" unselectable="on" tabindex="0">0%</label>
+            <label class="filter-value" for="zero" onselectstart="return false" onmousedown="return false" tabindex="0">0%</label>
             <input type="radio" name="fat-content" value="to-ten" id="to-ten" class="filter-radio" checked>
-            <label class="filter-value" for="to-ten" unselectable="on" tabindex="0">до 10%</label>
+            <label class="filter-value" for="to-ten" onselectstart="return false" onmousedown="return false" tabindex="0">до 10%</label>
             <input type="radio" name="fat-content" value="to-thirty" id="to-thirty" class="filter-radio">
-            <label class="filter-value" for="to-thirty" unselectable="on" tabindex="0">до 30%</label>
+            <label class="filter-value" for="to-thirty" onselectstart="return false" onmousedown="return false" tabindex="0">до 30%</label>
             <input type="radio" name="fat-content" value="above-thirty" id="above-thirty" class="filter-radio">
-            <label class="filter-value" for="above-thirty" unselectable="on" tabindex="0">выше 30%</label>
+            <label class="filter-value" for="above-thirty" onselectstart="return false" onmousedown="return false" tabindex="0">выше 30%</label>
           </div>
         </fieldset>
         </div>
@@ -208,15 +207,15 @@
           <legend class="filter-title">Наполнители:</legend>
           <div class="filter-background filter-fillers">
             <input type="checkbox" name="chocolate" id="chocolate" class="filter-checkbox" checked>
-            <label class="filter-assort-item" for="chocolate" unselectable="on" tabindex="0">шоколадные</label>
+            <label class="filter-assort-item" for="chocolate" onselectstart="return false" onmousedown="return false" tabindex="0">шоколадные</label>
             <input type="checkbox" name="sugar-powders" id="sugar-powders" class="filter-checkbox" checked>
-            <label class="filter-assort-item" for="sugar-powders" unselectable="on" tabindex="0">сахарные присыпки</label>
+            <label class="filter-assort-item" for="sugar-powders" onselectstart="return false" onmousedown="return false" tabindex="0">сахарные присыпки</label>
             <input type="checkbox" name="fruits" id="fruits" class="filter-checkbox">
-            <label class="filter-assort-item" for="fruits" unselectable="on" tabindex="0">фрукты</label>
+            <label class="filter-assort-item" for="fruits" onselectstart="return false" onmousedown="return false" tabindex="0">фрукты</label>
             <input type="checkbox" name="syrups" id="syrups" class="filter-checkbox">
-            <label class="filter-assort-item" for="syrups" unselectable="on" tabindex="0">сиропы</label> 
+            <label class="filter-assort-item" for="syrups" onselectstart="return false" onmousedown="return false" tabindex="0">сиропы</label> 
             <input type="checkbox" name="jams" id="jams" class="filter-checkbox">
-            <label class="filter-assort-item" for="jams" unselectable="on" tabindex="0">джемы</label>
+            <label class="filter-assort-item" for="jams" onselectstart="return false" onmousedown="return false" tabindex="0">джемы</label>
           </div>
         </fieldset>
         <button type="submit" class="btn btn-filter">Применить</button>
