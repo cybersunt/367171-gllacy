@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/grid.css">
   </head>
   <body class="body-catalog">
 
@@ -92,7 +93,7 @@
               <td class="cart-btn"><button class="cart-del">Удалить из корзины</button></td>
               <td class="cart-img">
                 <a href="catalog-item.html">
-                  <img class="cart-product-img" width="267" height="267" src="img/product-preview-1.jpg" alt="Пломбир с апельсиновым джемом">
+                  <img class="cart-product-img" width="33" height="33" src="img/product-preview-1.jpg" alt="Пломбир с апельсиновым джемом">
                 </a>
               </td>
               <td class="cart-name-product">
@@ -114,7 +115,7 @@
               <td class="cart-btn"><button class="cart-del">Удалить из корзины</button></td>
               <td class="cart-img">
                 <a href="catalog-item.html">
-                  <img class="cart-product-img" width="267" height="267" src="img/product-preview-2.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                  <img class="cart-product-img" width="33" height="33" src="img/product-preview-2.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада">
                 </a>
               </td>
               <td class="cart-name-product">
@@ -324,7 +325,7 @@
     </main>
     <footer class="main-footer wrap">
       <ul class="social">
-        <li class="social-item social-twit">
+        <li class="social-item">
           <a class="social-link" href="http://twitter.com">
             <span class="visually-hidden">Twitter</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
@@ -332,7 +333,7 @@
             </svg>
           </a>
         </li>
-        <li class="social-item social-inst">
+        <li class="social-item">
           <a class="social-link" href="http://instagram.com">
             <span class="visually-hidden">Instagram</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
@@ -344,7 +345,7 @@
             </svg>
           </a>
         </li>
-        <li class="social-item social-fb">
+        <li class="social-item ">
           <a class="social-link" href="http://facebook.com">
             <span class="visually-hidden">Facebook</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
@@ -352,7 +353,7 @@
             </svg>
           </a>
         </li>
-        <li class="social-item social-vk">
+        <li class="social-item">
           <a class="social-link" href="http://vk.com">
             <span class="visually-hidden">Вконтакте</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
@@ -364,21 +365,23 @@
           </a>
         </li>
       </ul>
-      <ul class="footer-menu">
-        <li class="footer-menu-item footer-menu-item-current">
-          <a href="#" class="footer-menu-link">
-            <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="13" viewBox="0 0 15 13">
-              <path class="icon-heart" fill="#fff" d="M10.799 0c-1.35 0-2.551.65-3.3 1.661A4.097 4.097 0 0 0 4.199 0C1.875 0 0 1.806 0 4.044 0 7.223 7.499 13 7.499 13s7.499-5.777 7.499-8.956C14.998 1.806 13.123 0 10.799 0z"/>
-            </svg> 
-            <span>Для поставщиков</span>
-          </a>
-        </li>
-        <li class="footer-menu-item"><a href="#" class="footer-menu-link"><span>О производстве</span></a></li>
-      </ul>
-      <ul class="footer-menu">
-        <li class="footer-menu-item"><a href="#" class="footer-menu-link"><span>Наши документы</span></a></li>
-        <li class="footer-menu-item"><a href="#" class="footer-menu-link"><span>Экологические стандарты</span></a></li>
-      </ul>
+      <div class="second-menu">
+        <ul class="footer-menu">
+          <li class="footer-menu-item footer-menu-item-current">
+            <a href="#" class="footer-menu-link">
+              <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="13" viewBox="0 0 15 13">
+                <path class="icon-heart" fill="#fff" d="M10.799 0c-1.35 0-2.551.65-3.3 1.661A4.097 4.097 0 0 0 4.199 0C1.875 0 0 1.806 0 4.044 0 7.223 7.499 13 7.499 13s7.499-5.777 7.499-8.956C14.998 1.806 13.123 0 10.799 0z"/>
+              </svg> 
+              <span>Для поставщиков</span>
+            </a>
+          </li>
+          <li class="footer-menu-item"><a href="#" class="footer-menu-link"><span>О производстве</span></a></li>
+        </ul>
+        <ul class="footer-menu">
+          <li class="footer-menu-item"><a href="#" class="footer-menu-link"><span>Наши документы</span></a></li>
+          <li class="footer-menu-item"><a href="#" class="footer-menu-link"><span>Экологические стандарты</span></a></li>
+        </ul>
+      </div>
       <div class="copyright">
         <a href="http://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy" class="copyright-img" width="110" height="40"></a>
         <p class="copyright-txt">Сделано в <a class="copyright-link" href="http://htmlacademy.ru">HTML Academy</a> &#169; 2017</p>
