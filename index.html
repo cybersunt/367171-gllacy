@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
@@ -111,9 +112,9 @@
           </li>
         </ul>
           <div class="slides-toggles">
-            <button type="button" class="slide-toggle slide-toggle-checked"><span class=" visually-hidden">Первый слайд</span></button>
-            <button type="button" class="slide-toggle"><span class=" visually-hidden">Второй слайд</span></button>
-            <button type="button" class="slide-toggle"><span class=" visually-hidden">Третий слайд</span></button>
+            <button type="button" class="slide-toggle slide-toggle-checked button-1"><span class=" visually-hidden">Первый слайд</span></button>
+            <button type="button" class="slide-toggle button-2"><span class=" visually-hidden">Второй слайд</span></button>
+            <button type="button" class="slide-toggle button-3"><span class=" visually-hidden">Третий слайд</span></button>
           </div>        
         </section>
       <section class="promo row">
@@ -191,7 +192,10 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Наши контакты</h2>
-        <div class="map-ymaps map-pin"><!--Интерактивная карта вставляется скриптом-->
+        <div class="map-ymaps hidden">
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9d6215cd5cfd8c569d49f34bc6f392a5980038746047270fc9e5e373693f4116&amp;lang=ru_RU&amp;scroll=true&amp;source=constructor" width="1200" height="430" frameborder="0"></iframe>
+        </div>
+        <div class="map-pin">
           <img src="img/map.jpg" class="map-img" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1200" height="430">
           <p class="map-adress visually-hidden">Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
         </div>
@@ -281,7 +285,7 @@
       <p class="modal-feedback-txt">Мы обязательно вам ответим!</p>
       <form class="feedback-form-modal" action="https://echo.htmlacademy.ru" method="post">
         <p class="feedback-layout">          
-          <input class="modal-input" type="text" id="name" name="name" placeholder="Как вас зовут?">
+          <input class="modal-input" type="text" id="your-name" name="your-name" placeholder="Как вас зовут?">
           <label for="name" class="modal-label">Ваше имя</label>
         </p>
         <p class="feedback-layout">          
