@@ -7,7 +7,7 @@ var slides = document.querySelectorAll(".slide-item");
 
 function changeBackGround(color, image) {
   document.body.style.backgroundColor = color;
-  document.body.style.backgroundImage = "../img/" + image;
+  document.body.style.backgroundImage = 'url(img/' + image + ')';
 }
 
 var onButton1Click = function (evt) {
@@ -47,9 +47,9 @@ var onButton3Click = function (evt) {
   changeBackGround("#9d8b84", "slide-3.png");
 }
 
-button1.addEventListener("click", onButton1Click());
-button2.addEventListener("click", onButton2Click());
-button3.addEventListener("click", onButton3Click());
+button1.addEventListener("click", onButton1Click);
+button2.addEventListener("click", onButton2Click);
+button3.addEventListener("click", onButton3Click);
 
 // Карта сайта 
 var ymaps = document.querySelector(".map-ymaps");
