@@ -59,7 +59,7 @@ map.classList.add("hidden");
 
 // Форма обратной связи
 var feedback = document.querySelector(".btn-feedback");
-var overlay = document.querySelector(".overlay-modal");
+var overlay = document.querySelector(".overlay");
   
 var popup = document.querySelector(".modal-feedback");
 var close = popup.querySelector(".modal-close");
@@ -73,7 +73,7 @@ var storage = localStorage.getItem("name");
 feedback.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.remove("hidden");
-  overlay.classList.remove("hidden");
+  overlay.classList.remova("hidden");
    
   if (storage) {
     yourName.value = storage;
