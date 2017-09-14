@@ -5,7 +5,8 @@
     <title>HTML Academy: Глейси</title>    
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
+<!--     <link rel="stylesheet" href="css/style.min.css"> -->
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
@@ -201,7 +202,8 @@
         <div class="map-contacts">
           <div class="map-info">
             <div class="map-contacts-adress">
-              <p class="map-contacts-desc">Адрес главного офиса<br> и офлайн магазина:</p>
+              <div class="map-contacts-desc">Адрес главного офиса<br> и офлайн магазина:
+              </div>
               <p class="map-contacts-data">ул. Большая Конюшенная<br> 19/8, Санкт-Петербург</p>
             </div>
             <div class="map-contacts-phone">
@@ -209,7 +211,7 @@
               <p class="map-contacts-data desc-phone">8 812 450-25-25</p>          
               <p class="map-contacts-desc">(с 10 до 20 ежедневно)</p>
             </div>
-          <p class="map-contacts-btn" ><a href="#feedback" class="btn btn-feedback">Форма обратной связи</a></p>
+          <p class="map-contacts-btn" ><a href="feedback.html" class="btn btn-feedback">Форма обратной связи</a></p>
           </div>
         </div>
       </section>
@@ -278,27 +280,28 @@
         <p class="copyright-txt">Сделано в <a class="copyright-link" href="http://htmlacademy.ru">HTML Academy</a> &#169; 2017</p>
       </div>
     </footer>
-    <div class="overlay-modal hidden"></div>
-    <section class="modal modal-feedback hidden" id="feedback">        
-      <h3 class="visually-hidden">Обратная связь</h3>
-      <p class="modal-feedback-txt">Мы обязательно вам ответим!</p>
-      <form class="feedback-form-modal" action="https://echo.htmlacademy.ru" method="post">
-        <p class="feedback-layout">          
-          <input class="modal-input" type="text" id="your-name" name="your-name" placeholder="Как вас зовут?">
-          <label for="your-name" class="modal-label">Ваше имя</label>
-        </p>
-        <p class="feedback-layout">          
-          <input class="modal-input" type="email" id="mail" name="mail" placeholder="Ваша почта для ответа?">
-          <label for="mail" class="modal-label">Ваше почта</label>
-        </p>
-        <p class="feedback-layout">          
-          <textarea name="message" id="message" class="modal-textarea" placeholder="Напишите что-нибудь..."></textarea>
-          <label for="message" class="modal-label">Ваше сообщение</label>
-        </p>
-        <button class="btn btn-send" type="submit">Отправить</button>
-      </form>
-      <button type="button" class="modal-close">Закрыть</button>
-    </section>    
+    <div class="overlay-modal hidden">
+      <section class="modal modal-feedback hidden" id="feedback">        
+        <h3 class="visually-hidden">Обратная связь</h3>
+        <p class="modal-feedback-txt">Мы обязательно вам ответим!</p>
+        <form class="feedback-form-modal" action="https://echo.htmlacademy.ru" method="post">
+          <p class="feedback-layout">          
+            <input class="modal-input" type="text" id="your-name" name="your-name" placeholder="Как вас зовут?" required>
+            <label for="your-name" class="modal-label">Ваше имя</label>
+          </p>
+          <p class="feedback-layout">          
+            <input class="modal-input" type="email" id="mail" name="mail" placeholder="Ваша почта для ответа?" required>
+            <label for="mail" class="modal-label">Ваше почта</label>
+          </p>
+          <p class="feedback-layout">          
+            <textarea name="message" id="message" class="modal-textarea" placeholder="Напишите что-нибудь..."></textarea>
+            <label for="message" class="modal-label">Ваше сообщение</label>
+          </p>
+          <button class="btn btn-send" type="submit">Отправить</button>
+        </form>
+        <button type="button" class="modal-close">Закрыть</button>
+      </section>
+    </div>
     <script src="js/main.min.js"></script>
   </body>
 </html>
