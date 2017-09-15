@@ -364,13 +364,17 @@ a {
 
 .slides {
   margin: 0;
-  padding: 0;
+  padding: 0 0 20px;
   list-style: none;
+}
+
+.slide-item {
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 .slide-line {
   margin: 0 auto;
-  text-align: center;
   width: 700px;
 }
 
@@ -378,7 +382,7 @@ a {
   font-weight: 700;
   font-size: 60px;
   line-height: 60px;
-  margin-bottom: 53px;
+  margin-bottom: 31px;
 }
 
 .slides-toggles {
@@ -470,6 +474,7 @@ a {
 
   position: absolute;
   bottom: 66px;
+  top: 208px;
 }
 
 .goods-item-price span {
@@ -606,8 +611,7 @@ a {
           flex-direction: column;
   background-color: #ffffff;
   background-image: url('../img/blog.jpg');
-  background-repeat: repeat;
-  background-position: 0 0;
+  background-repeat: no-repeat;
   margin-right: 28px;
 }
 
@@ -617,8 +621,6 @@ a {
   border-radius: 15px;
   background-color: #f8f7f4;
   background-image: url('../img/bg-post.svg');
-  background-repeat: repeat;
-  background-position: 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -631,7 +633,7 @@ a {
 
 .subscribe-wrap {
   width: 508px;
-  min-height: 148px;
+  height: 100%;
   background-color: #f8f7f4;
   border-radius: 15px;
   
@@ -1650,7 +1652,7 @@ a {
 }
 
 .filters {
-  height: 135px;
+  min-height: 135px;
   margin-bottom: 37px;
 }
 
@@ -1984,8 +1986,9 @@ a {
 .btn-slider {
   font-size: 32px;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-  padding: 12px 40px;
+  padding: 20px 40px;
   border-radius: 60px;
+  display: inline-block;
 }
 
 .btn-order {
@@ -2156,7 +2159,7 @@ a {
 .slider {
   -webkit-margin-top: 269px;
   margin-top: 266px;
-  height: 257px;
+  min-height: 257px;
 }
 
 .promo-block {
@@ -2296,7 +2299,6 @@ a {
 .map {
   width: 1200px;
   height: 430px;
-  overflow: hidden;
   margin-left: -27px;
   margin-right: -27px;
   position: relative;
@@ -2340,6 +2342,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
