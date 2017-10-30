@@ -249,8 +249,13 @@ a {
           align-items: center;
 }
 
-.user-link:hover .user-link-svg,
-.user-link:focus .user-link-svg {
+.user-link-icon,
+.user-link:visited .user-link-icon {
+  fill: #ffffff;
+}
+
+.user-link:hover .user-link-icon,
+.user-link:focus .user-link-icon {
   fill: #323232;
 }
 
@@ -1207,7 +1212,8 @@ a {
 .cart {
   position: absolute;
   left: -421px;
-  width: 510px;
+  width: 540px;
+  box-sizing: border-box;
   border-collapse: collapse;
   border-spacing: 0;
   display: block;
@@ -1268,8 +1274,10 @@ a {
 }
 
 .cart-product-counts {
+  box-sizing: border-box;
+  width: 135px;
   padding-left: 13px;
-  padding-right: 30px;
+  padding-right: 28px;
 }
 
 .cart-product-order-price {
@@ -1780,7 +1788,7 @@ a {
 }
 
 .filter-value {
- margin-right: 16px;
+ margin-right: 14px;
  margin-left: 30px;
 }
 
@@ -1985,10 +1993,12 @@ a {
 }
 
 .btn-feedback {
-  padding-left: 27px;
-  padding-right: 27px;
+  padding-left: 23px;
+  padding-right: 22px;
   display: block;
-} /*Открывает форму обратной связи, на карте*/
+}
+
+/*Открывает форму обратной связи, на карте*/
 
 .btn-slider {
   font-size: 32px;

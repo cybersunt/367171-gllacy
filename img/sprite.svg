@@ -8,15 +8,14 @@
       <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/>
     </g>
   </symbol>
-  <symbol id="icon-basket" viewBox="0 0 21 20">
+  <symbol id="icon-basket-empty" viewBox="0 0 21 20">
     <g>
-      <path d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/>
       <circle cx="6.984" cy="18" r="2"/><circle cx="15.984" cy="18" r="2"/>
       <path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/>
     </g>
   </symbol>
   <symbol id="icon-basket-full" viewBox="0 0 21 20">
-    <g>
+    <g fill="#323232">
       <path fill="#E84D37" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/>
       <circle cx="6.984" cy="18" r="2"/><circle cx="15.984" cy="18" r="2"/>
       <path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/>
