@@ -955,6 +955,14 @@ a {
   color: #999999;
 }
 
+.search-input::-ms-input-placeholder,
+.feedback-input::-ms-input-placeholder,
+.modal-input::-ms-input-placeholder,
+.modal-textarea::-ms-input-placeholder,
+.more-info-subscribe-mail::-ms-input-placeholder {
+  color: #999999;
+}
+
 .search-input::placeholder,
 .feedback-input::placeholder,
 .modal-input::placeholder,
@@ -976,6 +984,14 @@ a {
 .modal-input:focus:-ms-input-placeholder,
 .modal-textarea:focus:-ms-input-placeholder,
 .more-info-subscribe-mail:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.search-input:focus::-ms-input-placeholder,
+.feedback-input:focus::-ms-input-placeholder,
+.modal-input:focus::-ms-input-placeholder,
+.modal-textarea:focus::-ms-input-placeholder,
+.more-info-subscribe-mail:focus::-ms-input-placeholder {
   color: transparent;
 }
 
@@ -1195,7 +1211,8 @@ a {
   position: absolute;
   left: -421px;
   width: 540px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-collapse: collapse;
   border-spacing: 0;
   display: block;
@@ -1256,7 +1273,8 @@ a {
 }
 
 .cart-product-counts {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 135px;
   padding-left: 13px;
   padding-right: 28px;
@@ -1715,6 +1733,7 @@ a {
   height: 37px;
   display: block;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .select-container {
@@ -1770,7 +1789,7 @@ a {
 }
 
 .filter-value {
- margin-right: 14px;
+ margin-right: 16px;
  margin-left: 30px;
 }
 
@@ -1975,8 +1994,8 @@ a {
 }
 
 .btn-feedback {
-  padding-left: 23px;
-  padding-right: 22px;
+  padding-left: 27px;
+  padding-right: 27px;
   display: block;
 }
 
@@ -2323,7 +2342,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   min-height: 105px;
   padding: 10px 0;
 }
@@ -2341,7 +2361,9 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 350px;
   min-height: 40px;
 }
@@ -2366,7 +2388,7 @@ a {
 }
 
 .social-icon,
-.social-link:visited .social-icon, {
+.social-link:visited .social-icon {
   fill: #e6ebe9;
 }
 
