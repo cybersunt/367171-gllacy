@@ -879,9 +879,9 @@ a {
   color: #ffbc9e;
 }
 
-.footer-menu-link:hover .footer-icon,
-.footer-menu-link:focus .footer-icon,
-.footer-menu-link:active .footer-icon {
+.footer-menu-link:hover .footer_icon,
+.footer-menu-link:focus .footer_icon,
+.footer-menu-link:active .footer_icon {
   fill: #ffbc9e;
 }
 
@@ -1736,7 +1736,7 @@ a {
   width: 9px;
   height: 5px;
   z-index: 0;
-  background-image: url(../img/select-arrow.svg);
+  background-image: url(../img/sprite-filter.svg#select-arrow);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1749,7 +1749,7 @@ a {
 
 .select-container:hover::after,
 .select-container:focus::after {
-  background-image: url(../img/select-arrow-hover.svg);
+  background-image: url(../img/sprite-filter.svg#select-arrow-hover);
 }
 
 .filter-assort:hover {
@@ -1806,7 +1806,7 @@ a {
   height: 20px;
   cursor: pointer;
   content: '';
-  background-image: url('../img/filter-button.svg');
+  background-image: url('../img/sprite-filter.svg#filter-button');
   background-position: 0 0;
   background-repeat: no-repeat;
 }
@@ -1845,7 +1845,7 @@ a {
   height: 25px;
   top: -3px;
   left: -32px;
-  background-image: url('../img/radio-off.svg');
+  background-image: url('../img/sprite-filter.svg#radio-off');
   background-repeat: no-repeat;
   background-position: 0 0;
   -webkit-transform: scale(0.87);
@@ -1856,25 +1856,25 @@ a {
 
 .filter-radio:hover + .filter-value::before,
 .filter-radio:focus + .filter-value::before {
-  background-image: url('../img/radio-off-hover.svg');
+  background-image: url('../img/sprite-filter.svg#radio-off-hover');
 
 }
 
 .filter-radio:checked + .filter-value::before {
-  background-image: url('../img/radio-on.svg');
+  background-image: url('../img/sprite-filter.svg#radio-on');
 }
 
 .filter-radio:hover:checked + .filter-value::before,
 .filter-radio:focus:checked + .filter-value::before {
-  background-image: url('../img/radio-on-hover.svg');
+  background-image: url('../img/sprite-filter.svg#radio-on-hover');
 }
 
 .filter-radio:disabled + .filter-value::before {
-  background-image: url('../img/radio-off-disabled.svg');
+  background-image: url('../img/sprite-filter.svg#radio-off-disabled');
 }
 
 .filter-radio:disabled:checked + .filter-value::before {
-  background-image: url('../img/radio-on-disabled.svg');
+  background-image: url('../img/sprite-filter.svg#radio-on-disabled');
 }
 
 .filter-checkbox {
@@ -1889,7 +1889,7 @@ a {
   height: 23px;
   top: -3px;
   left: -34px;
-  background-image: url(../img/checkbox-off.svg);
+  background-image: url('../img/sprite-filter.svg#checkbox-off');
   background-repeat: no-repeat;
   background-position: 0 0;
   -webkit-transform: scale(0.82);
@@ -1901,24 +1901,24 @@ a {
 
 .filter-checkbox:hover + .filter-assort-item::before,
 .filter-checkbox:focus + .filter-assort-item::before {
-  background-image: url(../img/checkbox-off-hover.svg);
+  background-image: url('../img/sprite-filter.svg#checkbox-off-hover');
 }
 
 .filter-checkbox:checked + .filter-assort-item::before {
-  background-image: url(../img/checkbox-on.svg);
+  background-image: url('../img/sprite-filter.svg#checkbox-on');
 }
 
 .filter-checkbox:hover:checked + .filter-assort-item::before,
 .filter-checkbox:focus:checked + .filter-assort-item::before {
-  background-image: url(../img/checkbox-on-hover.svg);
+  background-image: url('../img/sprite-filter.svg#checkbox-on-hover');
 }
 
 .filter-checkbox:disabled + .filter-assort-item::before {
-  background-image: url('../img/checkbox-off-disabled.svg');
+  background-image: url('../img/sprite-filter.svg#checkbox-off-disabled');
 }
 
 .filter-checkbox:disabled:checked + .filter-assort-item::before {
-  background-image: url('../img/checkbox-on-disabled.svg');
+  background-image: url('../img/sprite-filter.svg#checkbox-on-disabled');
 }
 
 /*Кнопки */
